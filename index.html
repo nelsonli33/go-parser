@@ -9,11 +9,13 @@
 </head>
 
 <body>
-  <h1>File Upload</h1>
-  <form enctype="multipart/form-data" action="http://localhost:8000/uploadFile" method="post">
+  <h1>Import Traffic Accident File To Database</h1>
+  <form enctype="multipart/form-data" action="http://localhost:8000/importFile" method="post">
     <input type="file" name="originalFile" />
     <input type="submit" value="upload" />
   </form>
+
+  {{.Message}}
 </body>
 
 </html>
